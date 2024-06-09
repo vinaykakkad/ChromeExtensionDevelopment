@@ -1,0 +1,27 @@
+{
+  "name": "tfjs-basic-chrome-extension",
+  "version": "0.2.0",
+  "description": "Use tfjs model.predict in a chrome extension (v3)",
+  "@parcel/resolver-default": {
+    "packageExports": true
+  },
+  "scripts": {
+    "build": "rm -rf dist && npx parcel build manifest.json",
+    "start": "rm -rf dist && npx parcel watch manifest.json --host localhost"
+  },
+  "license": "Apache 2.0",
+  "devDependencies": {
+    "buffer": "^6.0.3",
+    "clang-format": "^1.2.3",
+    "@parcel/config-webextension": "^2.10.3",
+    "@parcel/core": "^2.10.3",
+    "process": "^0.11.10"
+  },
+  "resolutions": {
+    "node-fetch": "2.6.7"
+  },
+  "dependencies": {
+    "@tensorflow-models/mobilenet": "^2.1.0",
+    "@tensorflow/tfjs": "^3.13.0"
+  }
+}
