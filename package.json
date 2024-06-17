@@ -1,7 +1,7 @@
 {
   "name": "tfjs-basic-chrome-extension",
   "version": "0.2.0",
-  "description": "Use tfjs model.predict in a chrome extension (v3)",
+  "description": "Use transformers.js model in a chrome extension (v3)",
   "@parcel/resolver-default": {
     "packageExports": true
   },
@@ -23,7 +23,6 @@
     "node-fetch": "2.6.7"
   },
   "dependencies": {
-    "@tensorflow-models/mobilenet": "^2.1.0",
-    "@tensorflow/tfjs": "^3.13.0"
+    "@xenova/transformers": "^2.0.0"
   }
 }
