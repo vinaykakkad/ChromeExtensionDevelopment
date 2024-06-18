@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Simple Text",
+  "version": "1.0",
+  "description": "Adds simple text to Infocusp's website 😀",
+  "content_scripts": [
+    {
+      "matches": ["https://www.infocusp.com/*"],
+      "js": ["content.js"],
+      "css": ["styles.css"],
+      "run_at": "document_idle"
+    }
+  ]
+}
