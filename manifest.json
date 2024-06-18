@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "Text With Processing",
+  "version": "1.0",
+  "description": "Process text from user and add it to Infocusp's website 😀",
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.infocusp.com/*"],
+      "js": ["content.js"],
+      "css": ["style.css"],
+      "run_at": "document_idle"
+    }
+  ]
+}
